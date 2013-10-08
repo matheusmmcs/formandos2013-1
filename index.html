@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formandos 2013.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- Bootstrap -->
+    <!--
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    -->
+    <link href='http://fonts.googleapis.com/css?family=Snippet' rel='stylesheet' type='text/css'>
+
+    <!--
+    <link rel="stylesheet/less" href="less/style.less">
+    <script src="js/less.js"></script>
+	-->
+
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <div class="container">
+    	<div class="container-middle">
+	    	<div id="content-top" class="header teste">
+		        
+	      	</div>
+
+	      	<div id="content"></div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; Formandos 2013.1 - Ciência da Computação - UFPI</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <script type="text/template" id="c-top-menu">
+    	<ul class="nav nav-pills pull-right">
+          <li class="<%= menutop == 'home' ? 'active' : '' %>"><a href="#/">Início</a></li>
+          <li class="<%= menutop == 'solemnities' ? 'active' : '' %>"><a href="#/solemnities">Solenidades</a></li>
+        </ul>
+    	<a href="#/" class="c-title">Formandos 2013.1</a>
+    </script>
+    <script type="text/template" id="c-initial-page">
+    	<div class="row">
+    		<div class="col-xs-12">
+
+    			<div class="c-area-photo">
+			      	<a href="#" class="thumbnail c-photo-class">
+				      <img src="img/fotos/turma.jpg" alt="Formandos 2013.1">
+				  	</a>
+				  	<div class="c-area-photo-info">
+				  		<div class="c-btns-center">
+				  			<h1>Mais detalhes...</h1>
+				  			
+				  			<div class="row">
+				  				<div class="col-xxs-12 col-xs-10 col-sm-9 margin-center">
+				  					<div class="row">
+				  						<div class="col-xs-6">
+						  					<a href="#/teacher/init" id="c-btn-professor" class="btn btn-primary btn-block c-btn-large">Sou Professor</a>
+						  				</div>
+						  				<div class="col-xs-6">
+						  					<a href="#/friend" id="c-btn-amigo" class="btn btn-primary btn-block c-btn-large">Sou Amigo</a>
+						  				</div>
+				  					</div>
+				  				</div>
+				  			</div>
+				  		</div>
+				  	</div>
+			    </div>
+
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-xs-12 col-sm-6">
+    			<a href="#/solemnities" class="thumbnail c-solemnity">
+			      	Solenidades
+			    </a>
+    		</div>
+    		<div class="col-xs-12 col-sm-6">
+    			<a href="#/congrats" class="thumbnail c-solemnity">
+			      	Agradecimentos
+			    </a>
+    		</div>
+    	</div>
+	</script>
+	<script type="text/template" id="c-page-teacher">
+		<div class="c-area-student">
+			<div class="row">
+				<div class="col-xxs-12 col-xs-3">
+					<a href="#" class="thumbnail c-photo-student">
+				      <img src="img/fotos/<%= photo %>" alt="<%= name %>">
+				  	</a>
+				</div>
+				<div class="col-xxs-12 col-xs-9">
+					<h1><%= name %></h1>
+					<p class="justify"><%= descriptions.default %></p>
+					<div class="c-student-pontuation" <%= points > 0 ? 'data-stars-selected="'+points+'"' : '' %>>
+						<span data-point="1" class="glyphicon glyphicon-star<%= points < 1 ? '-empty' : ' active' %>"></span>
+						<span data-point="2" class="glyphicon glyphicon-star<%= points < 2 ? '-empty' : ' active' %>"></span>
+						<span data-point="3" class="glyphicon glyphicon-star<%= points < 3 ? '-empty' : ' active' %>"></span>
+						<span data-point="4" class="glyphicon glyphicon-star<%= points < 4 ? '-empty' : ' active' %>"></span>
+						<span data-point="5" class="glyphicon glyphicon-star<%= points < 5 ? '-empty' : ' active' %>"></span>
+					</div>
+				</div>
+			</div>
+			<div class="row c-student-actions">
+				<a href="#" class="btn btn-primary c-btn-next pull-right margin-right-init">Próximo</a>
+				<a href="#" class="btn btn-default c-btn-back pull-right">Voltar</a>
+			</div>
+	  	</div>
+	</script>
+	<script type="text/template" id="c-page-init-teacher">
+		<div class="c-area-student">
+			<div class="row">
+				<div class="well well-sm justify">
+					<h4>Introdução</h4>
+					Durante o bacharelado em Ciência da Computação, convivemos diariamente com nossos professores no Departamento de Computação da UFPI. Independentemente do futuro profissional traçado por cada formando, seremos eternamente gratos aos ensinamentos passados durante essa etada em nossas vidas. Não poderíamos nos "despedir" sem fazer uma brincadeira com esses caras que tanto nos ajudaram a crescer pessoalmente e profissionalmente. 
+					<h4>Como funciona?</h4>
+					Passamos 4 an... quer dizer, 5, 6, 7 anos avaliando vocês ao final de cada matéria. A ideia é inverter essa avaliação: cada professor avalia os formandos em uma escala de 0 a 5 estrelas. O método de avaliação é pessoal, ou seja, não há uma fórmula para a nota. Após essa avaliação, analisaremos os pontos obtidos e daremos sugestões. <br/><br/>Assim como nas diversas avaliações que fizemos de vocês, esta avaliação é <b>impessoal</b> e <b>anônima</b>. =)
+				</div>
+			</div>
+			<div class="row c-student-actions">
+				<a href="#/teacher" class="btn btn-primary pull-right margin-right-init">Avaliar</a>
+				<a href="#" class="btn btn-default c-back-route pull-right">Voltar</a>
+			</div>
+	  	</div>
+	</script>
+	<script type="text/template" id="c-page-end-teacher">
+    	<div class="c-area-student">
+			
+				<h4>Pontuação da turma: <span class="label <%= qualify == 0 ? 'label-danger' : qualify == 1 ? 'label-warning' : qualify == 2 ? 'label-default' : qualify == 3 ? 'label-info' : qualify == 4 ? 'label-primary' : '' %>"><%= points %>/<%= total %></span></h4>
+				<div class="well well-sm margin-bottom-0">
+					<%= qualify == 0 ? 'A pontuação da tumar foi <b>muito baixa</b>! Acredito que você deva estar feliz com a saída desses picaretas. Para expressar sua felicidade, que tal contribuir bastante para comemorar a saída deles? =P' : '' %>
+					<%= qualify == 1 ? 'A pontuação da turma foi <b>baixa</b>. Esqueça as dores de cabeça que esses caras fizeram você passar, eles já estão de saída... Que tal uma boa contribuição para esquecer os problemas? ;)' : '' %>
+					<%= qualify == 2 ? 'A pontuação da turma foi <b>regular</b>. A nota não foi ruim, nem boa... que tal sairmos da regularidade e darmos uma contribuição boa!? =)' : '' %>
+					<%= qualify == 3 ? 'A pontuação da turma foi <b>boa</b>. Uma pontuação assim não pode ficar sem uma comemoração, que tal contribuir para a aula da saudade ser tão boa quanto a nota? =D' : '' %>
+					<%= qualify == 4 ? 'A pontuação da turma foi <b>excelente</b>! Ficamos até sem jeito com uma nota tão boa... temos certeza que também conseguiremos uma contribuição excelente! =D ' : '' %>
+				</div>
+			
+			<h4>Contribua e faça 8 fomandos felizes!</h4>
+			<div class="well well-sm margin-bottom-0">
+				Essa brincadeira foi uma forma de descontrair e, ao mesmo tempo, pedir sua contribuição para a nossa formatura. O valor arrecadado será utilizado para a nossa aula da saudade. Sinta-se convidado. =)
+			</div>
+			<h4>Dados bancários da turma:</h4>
+			<div class="well well-sm margin-bottom-0 c-descriptio-list">
+				<dl class="dl-horizontal">
+				  <dt>Titular</dt>
+				  <dd>Jurandir Cavalcante Lacerda Júnior (Jurandir Cavalcante L J)</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				  <dt>Banco</dt>
+				  <dd>Caixa Econômica Federal</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				  <dt>Agencia</dt>
+				  <dd>3389</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				  <dt>Operação</dt>
+				  <dd>013</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				  <dt>Conta</dt>
+				  <dd>12775-9</dd>
+				</dl>
+			</div>
+			<h4>Obrigado por participar dessa brincadeira! =P</h4>
+			<div class="row c-student-actions">
+				<a href="#/" class="btn btn-default pull-right">Início</a>
+				<a href="#" class="btn btn-default c-back-route pull-right">Voltar</a>
+				<a href="#/teacher/init" class="btn btn-default pull-right">Avaliar de novo</a>
+			</div>
+	  	</div>
+    </script>
+    <script type="text/template" id="c-friends-page">
+		<div class="row c-friends">
+			<% for(var idx in students){ var el = students[idx]; %>
+				<div class="col-xs-3 col-xxs-6">
+					<a href="#/friend/<%= el.id %>" class="thumbnail c-photo-student">
+				      <img src="img/fotos/<%= el.photo %>" alt="<%= el.name %>" title="<%= el.name %>">
+				      <span class="c-friends-name">
+				      	<%= el.shortname %>
+				      </span>
+				  	</a>
+				</div>
+			<% } %>
+		</div>
+	</script>
+	<script type="text/template" id="c-student-page">
+		<div class="c-area-student">
+			<div class="row">
+				<div class="col-xxs-12 col-xs-3">
+					<a href="#" class="thumbnail c-photo-student">
+				      <img src="img/fotos/<%= photo %>" alt="<%= name %>" title="<%= name %>">
+				  	</a>
+				</div>
+				<div class="col-xxs-12 col-xs-9">
+					<h1><%= name %></h1>
+					<p class="justify"><%= descriptions.default %></p>
+				</div>
+			</div>
+			<div class="row c-student-actions">
+				<a href="#/solemnities" class="btn btn-primary pull-right margin-right-init">Solenidades</a>
+				<a href="#/" class="btn btn-default pull-right">Início</a>
+				<a href="#" class="btn btn-default c-back-route pull-right">Voltar</a>
+			</div>
+		</div>
+	</script>
+	<script type="text/template" id="c-page-solemnities">
+		Em breve...
+	</script>
+	<script type="text/template" id="c-page-congrats">
+		Em breve...
+	</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed
+    <script src="js/bootstrap.min.js"></script>
+    -->
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    
+    <script src="js/app/app.js"></script>
+
+
+    <script type="text/javascript"> 
+	var $buoop = {
+		vs:{i:8,f:15,o:10.6,s:4,n:9},
+		reminder:0,
+		newwindow: true
+	} 
+	$buoop.ol = window.onload; 
+	window.onload=function(){ 
+	 try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
+	 var e = document.createElement("script"); 
+	 e.setAttribute("type", "text/javascript"); 
+	 e.setAttribute("src", "http://browser-update.org/update.js"); 
+	 document.body.appendChild(e); 
+	} 
+	</script> 
+  </body>
+</html>
