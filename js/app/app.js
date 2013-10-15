@@ -71,7 +71,8 @@ AppView = Backbone.View.extend({
 			name: "Matheus Campanhã",
 			shortname: "Matheus",
 			descriptions: {
-				"default": "Entusiasta em usabilidade e interações de usuários. Quando criança, sonhava ser jogador de futebol, mas esse sonho acabou logo, quando percebeu que a única habilidade dos seus pés era caminhar.<br/><br/>Saudações Rubro-negras!"
+				"default": "Entusiasta em usabilidade e interações de usuários. Quando criança, sonhava ser jogador de futebol, mas esse sonho logo acabou, pois percebeu que a única habilidade dos seus pés era caminhar.<br/><br/>Saudações Rubro-negras!",
+				"friends": "Agradeço primeiramente à minha mãe, por sua dedicação e esforço para me proporcionar uma excelente educação, além de muito carinho e amor. Aos demais familiares, em especial aos meus queridos irmãos, Marina e Anderson, pelo companheirismo e apoio sempre. À minha melhor amiga e namorada, Fernanda, que nunca mediu esforços para me apoiar nesta jornada. Aos meus amigos, que me proporcionaram grandes momentos. Enfim, agradeço a todos que fizeram parte desta importante etapa da minha vida. Essa conquista é nossa!"
 			},
 			photo: "Matheus.jpg"
 		});
@@ -81,7 +82,8 @@ AppView = Backbone.View.extend({
 			name: "Jurandir Cavalcante",
 			shortname: "Jurandir",
 			descriptions: {
-				"default": "Descrição"
+				"default": "Atuante na área de redes de computadores, e Rei das monitorias da UFPI. Amante de Livros/Games/Cinema e do bom e velho Rock n’ Roll. Quando criança queria ser Médico, mas como não gosta de moleza decidiu fazer Computação :p <br/><br/> Vai Corinthians!",
+				"friends": "Agradeço primeiramente a meus pais, Jurandir e Sandra, por todo amor, carinho, esforço e dedicação aplicados a mim durante toda a vida.  A meu irmão José Vítor pela paciência, e a Glice pela delicadeza comigo. Agradeço a meus avós, tios e primos por constituírem essa família maravilhosa a qual pertenço. Agradeço ao Expedito Gondim e sua família, por ter me acolhido em sua casa durante o inicio da minha jornada como universitário. Meus “tios” Bertolino e Sandra, Edilberto e Alda pelo apoio. A todos os meus professores (desde o maternal) pelos ensinamentos. A todos os meus amigos por estarem presentes durante os diversos momentos da minha vida, em especial: Fernanda, Nayra, Deborah, Heliana, Thiago B1, Thiago B2, Kassio, Mariana, Emanuela, Jairo e Igo. E por ultimo, agradeço a Deus pela vida e por me proporcionar conhecer todos estes que citei."
 			},
 			photo: "Jurandir.jpg"
 		});
@@ -91,7 +93,8 @@ AppView = Backbone.View.extend({
 			name: "Pedro Almir",
 			shortname: "Pedro",
 			descriptions: {
-				"default": "..."
+				"default": "Aluno dedicado, que apesar das aparências, não possui parentes no continente asiático. Profundo conhecedor das leis de Murphy. <br/><br/>Procurado na PotyCabana!",
+				"friends": ""
 			},
 			photo: "Pedro.jpg"
 		});
@@ -101,7 +104,8 @@ AppView = Backbone.View.extend({
 			name: "Anderson Soares",
 			shortname: "Anderson",
 			descriptions: {
-				"default": "..."
+				"default": "Tornou-se um guia vivo do ANTLR após dominar as monitorias de Compiladores. Nas horas vagas dá aula de Counter Strike. <br/><br/>Head shot! ",
+				"friends": "Agradeço aos meus amados pais, Raimundo e Nádia Soares, que sempre colocaram os filhos em primeiro lugar, pelo apoio, incentivo e por toda dedicação. As minhas irmãs, Nágyla e Nara, pela paciência e suporte. Aos meus cunhados, pelos momentos de descontração. Aos meus padrinhos, pela orientação e exemplo. Aos meus familiares, pela união e enorme carinho. À minha namorada Geórgia, pelo companheirismo e compreensão. Aos meus amigos, pelos bons momentos. Agradeço a todos pela torcida que, de alguma forma, me ajudou a finalizar mais esta etapa."
 			},
 			photo: "Anderson.jpg"
 		});
@@ -111,7 +115,8 @@ AppView = Backbone.View.extend({
 			name: "Janderson",
 			shortname: "Janderson",
 			descriptions: {
-				"default": "..."
+				"default": "Foi desenvolvedor e scrum master em uma equipe de uma pessoa. Grandes habilidades em manipular bovinos com linhas de código. <br/><br/>Friboi é para os fracos!",
+				"friends" : "“Mas aquilo que sou, devo à graça de Deus.” Por diversas vezes durante minha caminhada senti tua mão a me guiar e provei da tua misericórdia de Pai. Obrigado Deus, meu Tudo. Dedico esta vitória aos meu pais, Madalena e Antônio. Obrigado por serem meu exemplo de pais, de caráter e de vida. À Janmylla, meu muito obrigado por ser minha irmã preferida (risos). À Fernanda, minha namorada, agradeço pelo companheirismo de todos os dias na UFPI, e na vida. Obrigado por fim, aos que torceram e que fazem parte da minha vitória. Este canudo é nosso!!!"
 			},
 			photo: "Janderson.jpg"
 		});
@@ -121,7 +126,8 @@ AppView = Backbone.View.extend({
 			name: "Rodolfo",
 			shortname: "Rodolfo",
 			descriptions: {
-				"default": "..."
+				"default": "Grande defensor dos bebedouros do bloco de computação... mas tome cuidado com esse codoense! Se você não colaborar, ouvirá batuques de tambores! <br/><br/>Bita do Barão curtiu isso!",
+				"friends": "Gostaria de agradecer e compartilhar esta conquista com todos que estiveram ao meu lado. Agradeço imensamente a Deus, que com o Seu amor, concedeu-me a vida, guiando e protegendo-a. Aos meus pais, Francisco e Graça, pelo amor e grande dedicação, que não pouparam esforços para encorajar-me a seguir em frente e vencer. Aos meus familiares, que com carinho, me apoiam. Aos meus padrinhos, pelo incentivo e suporte. À minha namorada, Ingrid, pelo amor e companheirismo. Aos amigos, pelos momentos felizes dos quais sempre recordarei. Obrigado a todos, por tudo."
 			},
 			photo: "Rodolfo.jpg"
 		});
@@ -131,7 +137,8 @@ AppView = Backbone.View.extend({
 			name: "Vinicius",
 			shortname: "Vinicius",
 			descriptions: {
-				"default": "..."
+				"default": "Apesar do rosto de nerd, o \"Loro\" pensou em trancar o curso para se tornar tenista profissional, mas para evitar a fadiga, trocou o tenis pelo computador. Atualmente é jogador de Dota nas horas vagas. <br/><br/>O esportista da turma.",
+				"friends": "Ofereço essa conquista à minha família, que me apoiou em todos os momentos das minhas jornadas. Agradeço principalmente aos meus pais, Vera e Adail, que proporcionaram todos os ensinamentos para que eu pudesse ser quem eu sou e para que eu fosse capaz de encarar todos os desafios que vierem pela frente. <br/><br/> Eu aprendi uma lição importante no decorrer do curso. Quando as pessoas possuem objetivos em comum suas determinações se somam para se obter um melhor resultado. O nosso objetivo em comum é que todos sejam capazes de vencer os desafios que vêm por aí."
 			},
 			photo: "Vinicius.jpg"
 		});
@@ -141,7 +148,8 @@ AppView = Backbone.View.extend({
 			name: "Grazianny",
 			shortname: "Grazianny",
 			descriptions: {
-				"default": "..."
+				"default": "Aluno ímpar... durante o curso cresceu bastante, tanto pessoalmente como profissionalmente. Adora jogar basqueste e odeia bola de gude. <br/><br/>Resumindo, uma grande pessoa.",
+				"friends": "Agradeço em primeiro lugar a Deus por mais uma conquista, aos meus pais, Sebastião e Mª da Conceição e as minhas irmãs, Kassandra e Kacielle, por me darem amor incondicional, adoção ilimitada, exemplos de honestidade, caráter, valor, às vezes super-protetores. A minha namorada amada Gleisiane, meu cunhado Sandro, pelo apoio e torcida. Aos meus amigos da universidade, pelas recordações, nossa jornada e amizade sincera. Ao meu orientador Vinicius Ponte, pela competência e paciência ímpar. Agradeço a todos pela torcida, que de alguma forma, me ajudaram nessa etapa. Meu muito obrigado!"
 			},
 			photo: "Grazianny.jpg"
 		});
