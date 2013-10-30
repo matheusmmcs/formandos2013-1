@@ -73,7 +73,7 @@ AppView = Backbone.View.extend({
 			shortname: "Matheus",
 			descriptions: {
 				"default": "Entusiasta em usabilidade e interações de usuários. Quando criança, sonhava ser jogador de futebol, mas esse sonho logo acabou, pois percebeu que a única habilidade dos seus pés era caminhar.<br/><br/>Saudações Rubro-negras!",
-				"friends": "Agradeço primeiramente à minha mãe, por sua dedicação e esforço para me proporcionar uma excelente educação, além de muito carinho e amor. Aos demais familiares, em especial aos meus queridos irmãos, Marina e Anderson, pelo companheirismo e apoio sempre. À minha melhor amiga e namorada, Fernanda, que nunca mediu esforços para me apoiar nesta jornada. Aos meus amigos, que me proporcionaram grandes momentos. Enfim, agradeço a todos que fizeram parte desta importante etapa da minha vida. Essa conquista é nossa!"
+				"friends": "Agradeço primeiramente à minha mãe, Márcia, por sua dedicação e esforço para me proporcionar uma excelente educação, além de muito carinho e amor. Aos demais familiares, em especial à minha avó, Maria do Carmo, e aos meus queridos irmãos, Marina e Anderson, pelo companheirismo e apoio sempre. À minha melhor amiga e namorada, Fernanda, e à sua família, que nunca mediram esforços para me apoiar nesta jornada. Aos meus amigos, que me proporcionaram grandes momentos. Aos professores, por me ajudarem a crescer pessoalmente e profissionalmente. Enfim, agradeço a todos que fizeram parte desta importante etapa da minha vida. Essa conquista é nossa!"
 			},
 			photo: "Matheus.jpg"
 		});
