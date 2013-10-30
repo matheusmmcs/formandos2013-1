@@ -857,6 +857,7 @@ html,body,.container{height:100%;}
 .c-friends-name{display:block;font-size:12pt;line-height:25px;text-align:center;font-weight:bold;}
 .container-middle{height:auto;min-height:100%;padding-bottom:40px;}
 .footer{margin-top:-40px;height:40px;position:relative;text-align:center;}
+.g-map{height:250px;}
 body{padding-top:20px;padding-bottom:10px;}
 .header,.marketing,.footer{padding-left:15px;padding-right:15px;}
 .header{border-bottom:1px solid #e5e5e5;}

@@ -217,7 +217,114 @@
 		</div>
 	</script>
 	<script type="text/template" id="c-page-solemnities">
-		Em breve...
+		<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#solemnities1">
+        	Descerramento da placa
+        </a>
+      </h4>
+    </div>
+    <div id="solemnities1" class="panel-collapse collapse in">
+      <div class="panel-body">
+        
+      	<div class="row">
+		  <div class="col-sm-12 col-md-6">
+		    <div id="map-1" class="g-map"></div>
+		  </div>
+		  <div class="col-sm-12 col-md-6">
+		    <dl>
+		    	<dt>Local</dt>
+		    	<dd>Bloco de Computação - UFPI</dd>
+		    </dl>
+		    <dl>
+		    	<dt>Data</dt>
+		    	<dd>18/11/2013</dd>
+		    </dl>
+		    <dl>
+		    	<dt>Horário</dt>
+		    	<dd>19:00 horas</dd>
+		    </dl>
+		  </div>
+		</div>
+
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#solemnities2">
+          Colação de Grau
+        </a>
+      </h4>
+    </div>
+    <div id="solemnities2" class="panel-collapse collapse">
+      <div class="panel-body">
+        
+      	<div class="row">
+		  <div class="col-sm-12 col-md-6">
+		    <div id="map-2" class="g-map"></div>
+		  </div>
+		  <div class="col-sm-12 col-md-6">
+		    <dl>
+		    	<dt>Local</dt>
+		    	<dd>Espaço Noé Mendes - UFPI</dd>
+		    </dl>
+		    <dl>
+		    	<dt>Data</dt>
+		    	<dd>19/11/2013</dd>
+		    </dl>
+		    <dl>
+		    	<dt>Horário</dt>
+		    	<dd>19:30 horas</dd>
+		    </dl>
+		  </div>
+		</div>
+
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#solemnities3">
+          Missa em Ação de Graça
+        </a>
+      </h4>
+    </div>
+    <div id="solemnities3" class="panel-collapse collapse">
+      <div class="panel-body">
+       
+      <div class="row">
+		  <div class="col-sm-12 col-md-6">
+		    <div id="map-3" class="g-map"></div>
+		  </div>
+		  <div class="col-sm-12 col-md-6">
+		    <dl>
+		    	<dt>Local</dt>
+		    	<dd>Centro Paroquial Paulo VI - Capela São Miguel Arcanjo - Frei Serafim, 3200</dd>
+		    </dl>
+		    <dl>
+		    	<dt>Data</dt>
+		    	<dd>20/11/2013</dd>
+		    </dl>
+		    <dl>
+		    	<dt>Horário</dt>
+		    	<dd>20:00 horas</dd>
+		    </dl>
+		  </div>
+		</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 	</script>
 	<script type="text/template" id="c-page-congrats">
 		Em breve...
@@ -231,8 +338,9 @@
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
     
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="js/app/app.js"></script>
-
+    <script src="js/bootstrap/collapse.js"></script>
 
     <script type="text/javascript"> 
 	var $buoop = {

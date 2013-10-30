@@ -57,7 +57,8 @@ AppView = Backbone.View.extend({
 		'click .c-student-pontuation > .glyphicon' : 'clickPontuation',
 		'click .c-btn-next' : 'clickBtnNext',
 		'click .c-btn-back' : 'clickBtnBack',
-		'click .c-back-route' : 'backRoute'
+		'click .c-back-route' : 'backRoute',
+		'click .accordion-toggle' : 'initializeMaps'
 	},
 	initialize: function(){
 		_.bindAll(this, 'mouseOutPontuation', 'hoverGlyphicon', 'goToAvaliation', 'renderInitialPage', 'clickPontuation');
@@ -156,6 +157,9 @@ AppView = Backbone.View.extend({
 		this.students.push(student);
 		this.students.sort();
 		this.studentActual = 0;
+	},
+	initializeMaps: function(){
+		setTimeout(initializeGMAPS, 100);
 	},
 	backRoute: function(e){
 		if(e){
@@ -343,13 +347,46 @@ var Router = Backbone.Router.extend({
     },
     solemnities: function(){
     	appView._render("c-page-solemnities", {}, {top: "solemnities"});
+    	initializeGMAPS();
     },
     congrats: function(){
     	appView._render("c-page-congrats");
     }
 });
 
-
+function initializeGMAPS() {
+	var posit = new google.maps.LatLng(-5.056148,-42.789863);
+		var mapOptions = {
+		zoom: 17,
+		center: posit,
+		mapTypeId: google.maps.MapTypeId.SATELLITE
+	};
+	var map1 = new google.maps.Map(document.getElementById('map-1'),mapOptions);
+	var mark1 = new google.maps.Marker({
+	    position: posit,
+	    map: map1,
+	    title: 'Departamento de Computação'
+	});
+	//
+	posit = new google.maps.LatLng(-5.062464, -42.797468);
+	mapOptions.center = posit;
+	var map2 = new google.maps.Map(document.getElementById('map-2'),mapOptions);
+	var mark2 = new google.maps.Marker({
+	    position: posit,
+	    map: map2,
+	    title: 'Noé Mendes'
+	});
+	//
+	posit = new google.maps.LatLng(-5.083993, -42.798680);
+	mapOptions.center = posit;
+	var map3 = new google.maps.Map(document.getElementById('map-3'),mapOptions);
+	var mark3 = new google.maps.Marker({
+	    position: posit,
+	    map: map3,
+	    title: 'Centro Paroquial Paulo VI'
+	});
+}
+google.maps.event.addDomListener(window, 'load', initializeGMAPS);
 // Run components.
 var appView = new AppView();
 var router = new Router();
