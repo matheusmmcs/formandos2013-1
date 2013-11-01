@@ -127,7 +127,7 @@ AppView = Backbone.View.extend({
 			name: "Rodolfo",
 			shortname: "Rodolfo",
 			descriptions: {
-				"default": "Grande defensor dos bebedouros do bloco de computação... mas tome cuidado com esse codoense! Se você não colaborar, ouvirá batuques de tambores! <br/><br/>Bita do Barão curtiu isso!",
+				"default": "Grande defensor dos bebedouros do bloco de computação... mas tome cuidado com esse codoense! Se você não colaborar, ouvirá batuques de tambores!",
 				"friends": "Gostaria de agradecer e compartilhar esta conquista com todos que estiveram ao meu lado. Agradeço imensamente a Deus, que com o Seu amor, concedeu-me a vida, guiando e protegendo-a. Aos meus pais, Francisco e Graça, pelo amor e grande dedicação, que não pouparam esforços para encorajar-me a seguir em frente e vencer. Aos meus familiares, que com carinho, me apoiam. Aos meus padrinhos, pelo incentivo e suporte. À minha namorada, Ingrid, pelo amor e companheirismo. Aos amigos, pelos momentos felizes dos quais sempre recordarei. Obrigado a todos, por tudo."
 			},
 			photo: "Rodolfo.jpg"
@@ -335,7 +335,7 @@ var Router = Backbone.Router.extend({
     friend: function(id){
     	var ok = false;
     	if(id){
-    		var student = appView.students.findWhere({id: parseInt(id)});
+    		var student = appView.students.findWhere({shortname: id});
     		if(student){
     			appView._render("c-student-page", student.toJSON());
     			ok = true;
@@ -387,6 +387,7 @@ function initializeGMAPS() {
 	});
 }
 google.maps.event.addDomListener(window, 'load', initializeGMAPS);
+
 // Run components.
 var appView = new AppView();
 var router = new Router();

@@ -849,7 +849,7 @@ th.visible-print,td.visible-print{display:none !important;}
 .c-area-student .c-student-actions a{margin:5px 5px 10px;}.c-area-student .c-student-actions a.margin-right-init{margin-right:0px;}
 html,body,.container{height:100%;}
 .row{margin-right:0;margin-left:0;}
-.c-solemnity{height:60px;text-align:center;font-size:18pt;line-height:50px;font-weight:bold;-webkit-box-shadow:inset 0px 0px 20px 2px rgba(16, 66, 110, 0.2);box-shadow:inset 0px 0px 20px 2px rgba(16, 66, 110, 0.2);-webkit-transition:0.4s;transition:0.4s;}.c-solemnity:hover{text-decoration:none;-webkit-box-shadow:inset 0px 0px 40px 2px rgba(16, 66, 110, 0.3);box-shadow:inset 0px 0px 40px 2px rgba(16, 66, 110, 0.3);}
+.c-solemnity{height:50px;text-align:center;font-size:18pt;line-height:40px;font-weight:bold;-webkit-box-shadow:inset 0px 0px 20px 2px rgba(16, 66, 110, 0.2);box-shadow:inset 0px 0px 20px 2px rgba(16, 66, 110, 0.2);-webkit-transition:0.4s;transition:0.4s;}.c-solemnity:hover{text-decoration:none;-webkit-box-shadow:inset 0px 0px 40px 2px rgba(16, 66, 110, 0.3);box-shadow:inset 0px 0px 40px 2px rgba(16, 66, 110, 0.3);}
 .c-descriptio-list{font-family:Monaco,Menlo,Consolas,"Courier New",monospace;font-size:11pt;}.c-descriptio-list dl{margin:3px 0;}
 .c-descriptio-list dt{width:100px;}
 .c-descriptio-list dd{margin-left:120px;}

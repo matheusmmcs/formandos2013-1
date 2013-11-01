@@ -82,14 +82,13 @@
     	</div>
     	<div class="row">
     		<div class="col-xs-12 col-sm-6">
-    			<a href="#/solemnities" class="thumbnail c-solemnity">
+    		<a href="#/solemnities" class="thumbnail c-solemnity">
 			      	Solenidades
 			    </a>
     		</div>
     		<div class="col-xs-12 col-sm-6">
-    			<a href="#/congrats" class="thumbnail c-solemnity">
-			      	Agradecimentos
-			    </a>
+    			
+    			<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.weborn.com.br%2Fformandos&amp;width&amp;height=80&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;send=false&amp;appId=327281390720296" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
     		</div>
     	</div>
 	</script>
@@ -186,7 +185,7 @@
 		<div class="row c-friends">
 			<% for(var idx in students){ var el = students[idx]; %>
 				<div class="col-xs-3 col-xxs-6">
-					<a href="#/friend/<%= el.id %>" class="thumbnail c-photo-student">
+					<a href="#/friend/<%= el.shortname %>" class="thumbnail c-photo-student">
 				      <img src="img/fotos/<%= el.photo %>" alt="<%= el.name %>" title="<%= el.name %>">
 				      <span class="c-friends-name">
 				      	<%= el.shortname %>
@@ -207,6 +206,7 @@
 				<div class="col-xxs-12 col-xs-9">
 					<h1><%= name %></h1>
 					<p class="justify"><%= descriptions.friends ? descriptions.friends : descriptions.default %></p>
+					<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.weborn.com.br%2Fformandos%2F%23%2Ffriend%2F<%= shortname %>&amp;width&amp;height=80&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;send=false&amp;appId=327281390720296" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:30px;" allowTransparency="true"></iframe>
 				</div>
 			</div>
 			<div class="row c-student-actions">
