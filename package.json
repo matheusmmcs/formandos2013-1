@@ -1,5 +1,5 @@
 {
-  "name": "formandos ufpi 2013-1",
+  "name": "formandos-ufpi",
   "version": "0.0.1",
   "dependencies": {
     "express": "3.3.x"
