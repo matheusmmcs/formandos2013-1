@@ -10,13 +10,24 @@
 
 @heightFooter:			40px;
 
+.c-area-title{
+	#gradient > .radial(@inner-color: rgba(0, 0, 0, 0.6); @outer-color: rgba(0, 0, 0, 0.3));
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #fff;//@colorPrincipal;
+	padding: 10px;
+	font-size: 18pt;
+}
+
 .c{
 	&-title{
 		text-decoration: none;
 		color: @colorPrincipal;
 		font-weight: bold;
 		cursor: pointer;
-		font-size: 28pt;
+		font-size: 22pt;
 		line-height: 34pt;
 		&:hover{
 			text-decoration: none;
@@ -28,7 +39,7 @@
 	&-area-photo{
 		position: relative;
 		margin-bottom: 10px;
-		.opacity(70);
+		.opacity(90);
 		.transition(0.4s);
 
 		&-info{
@@ -47,21 +58,13 @@
 			.c-btns-center{
 				width: 100%;
 				height: 0px;
-				text-align: center;			    
-
-				h1{
-					#gradient > .radial(@inner-color: rgba(0, 0, 0, 0.6); @outer-color: rgba(0, 0, 0, 0));
-					//margin-top: 0;
-					margin-left: 0;
-					margin-right: 0;
-					padding: 0;
-				}
+				text-align: center;
 			}
 		}
 		&:hover{
 			.opacity(100);
 		}
-		&:hover > .c-area-photo-info{
+		&:hover > .c-area-photo-info, &.active > .c-area-photo-info{
 			.opacity(100);
 			height: 33%;
 		}

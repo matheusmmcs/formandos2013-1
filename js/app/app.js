@@ -95,7 +95,7 @@ AppView = Backbone.View.extend({
 			shortname: "Pedro",
 			descriptions: {
 				"default": "Aluno dedicado, que apesar das aparências, não possui parentes no continente asiático. Profundo conhecedor das leis de Murphy. <br/><br/>Procurado na PotyCabana!",
-				"friends": ""
+				"friends": "Faltam-me expressões suficientemente adequadas para demonstrar toda minha alegria e gratidão pelo sucesso alcançado nessa etapa. Entretanto essa vitória não é só minha, por isso agradeço primeiramente a Deus e aos meus pais, Antonio Matias e Angélica Rosa. Eles me ensinaram que nada é impossível quando se tem fé e determinação, e juntos construíram a base familiar sólida que me apoia em todos os momentos de fraqueza. Muito obrigado pelo amor, carinho e dedicação. A minha irmã Juliana, pelo apoio incondicional e pelo café das madrugadas de programação. A minha namorada Jayane, pelo amor, força, carinho e paciência. A minha tia Maria da Luz por ser meu porto seguro. Agradeço aos meus avós, tios, primos e especialmente a minha vó Elvira (in memoriam), se agora conquisto mais uma vitória, é porque um dia ela esteve ao meu lado e me ensinou a seguir pelo bom caminho. Aos meus professores, pelos ensinamentos e em especial ao professor Pedro Neto, pelo apoio durante essa jornada. Aos meus amigos e especialmente ao pessoal do TheBest. A todos que fizeram parte dessa conquista, meu muito obrigado."
 			},
 			photo: "Pedro.jpg"
 		});
@@ -313,19 +313,25 @@ var Router = Backbone.Router.extend({
     },
     initialize: function(){
     	//empty redirect to home
+    	this.$title = $('title');
+    	this.defaultTitle = "Formandos 2013.1";
     	this.route(/^$/, "home", this.home);
     },
     teacher: function() {
+    	this.$title.html(this.defaultTitle + " - Professores");
     	appView.goToAvaliation();
     },
     home: function(){
+    	this.$title.html(this.defaultTitle);
     	appView.renderInitialPage();
     },
     initTeacher: function(){
+    	this.$title.html(this.defaultTitle + " - Professores");
     	appView.studentActual = 0;
     	appView._render("c-page-init-teacher");
     },
     endTeacher: function(){
+    	this.$title.html(this.defaultTitle + " - Contribua =)");
     	appView._render("c-page-end-teacher", {
     		points: appView.students.getPoints(),
     		total: appView.students.getMaxPoints(),
@@ -337,19 +343,23 @@ var Router = Backbone.Router.extend({
     	if(id){
     		var student = appView.students.findWhere({shortname: id});
     		if(student){
+    			this.$title.html(this.defaultTitle + " - " + student.get('name'));
     			appView._render("c-student-page", student.toJSON());
     			ok = true;
     		}
     	}
     	if(!ok){
+    		this.$title.html(this.defaultTitle + " - Amigos");
     		appView._render("c-friends-page", {students: appView.students.toJSON()});
     	}
     },
     solemnities: function(){
+    	this.$title.html(this.defaultTitle + " - Solenidades");
     	appView._render("c-page-solemnities", {}, {top: "solemnities"});
     	initializeGMAPS();
     },
     congrats: function(){
+    	this.$title.html(this.defaultTitle);
     	appView._render("c-page-congrats");
     }
 });
