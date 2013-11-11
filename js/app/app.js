@@ -83,7 +83,7 @@ AppView = Backbone.View.extend({
 			name: "Jurandir Cavalcante",
 			shortname: "Jurandir",
 			descriptions: {
-				"default": "Atuante na área de redes de computadores, e Rei das monitorias da UFPI. Amante de Livros/Games/Cinema e do bom e velho Rock n’ Roll. Quando criança queria ser Médico, mas como não gosta de moleza decidiu fazer Computação :p <br/><br/> Vai Corinthians!",
+				"default": "Atuante na área de redes de computadores, e Rei das monitorias da UFPI. Amante de Livros/Games/Cinema e do bom e velho Rock n’ Roll. :p <br/><br/> Vai Corinthians!",
 				"friends": "Agradeço primeiramente a meus pais, Jurandir e Sandra, por todo amor, carinho, esforço e dedicação aplicados a mim durante toda a vida.  A meu irmão José Vítor pela paciência, e a Glice pela delicadeza comigo. Agradeço a meus avós, tios e primos por constituírem essa família maravilhosa a qual pertenço. Agradeço ao Expedito Gondim e sua família, por ter me acolhido em sua casa durante o inicio da minha jornada como universitário. Meus “tios” Bertolino e Sandra, Edilberto e Alda pelo apoio. A todos os meus professores (desde o maternal) pelos ensinamentos. A todos os meus amigos por estarem presentes durante os diversos momentos da minha vida, em especial: Fernanda, Nayra, Deborah, Heliana, Thiago B1, Thiago B2, Kassio, Mariana, Emanuela, Jairo e Igo. E por ultimo, agradeço a Deus pela vida e por me proporcionar conhecer todos estes que citei."
 			},
 			photo: "Jurandir.jpg"
